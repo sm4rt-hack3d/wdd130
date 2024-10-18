@@ -1,0 +1,128 @@
+
+:root {
+    --primary-color: #778DA9;   
+    --secondary-color: #0D1B2A; 
+    --accent1-color: #6C0E23;   
+    --accent2-color: #9CC5A1;   
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent2-color);
+    font-family: 'Rock Salt', cursive;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+article {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px; 
+    border-radius: 8px; 
+    position: relative;
+}
+
+article img {
+    float: right;
+    width: 150px;
+    margin: 0 0 10px 10px;
+}
+
+section.adventure {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background for the adventure section */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text for the heading */
+}
+
+.adventure h2 {
+    color: var(--accent1-color); /* Title color */
+    margin-bottom: 20px; /* Space between title and images */
+}
+
+.adventure .image-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Center images horizontally */
+    flex-wrap: nowrap; /* Allow wrapping if necessary */
+    gap: 20px; /* Space between images */
+}
+
+.adventure .image-container div {
+    text-align: center; /* Center align captions below images */
+    flex: 0 0 auto; /* Allow images to grow and shrink equally */
+    width: 150px;
+}
+
+.adventure img {
+    width: 100%; /* Set a uniform width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for images */
+}
+
+.adventure .caption {
+    margin-top: 5px; /* Space between image and caption */
+    color: var(--secondary-color); /* Caption color */
+}
+
+section h2 {
+    color: var(--accent1-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+    align-self: flex-end;
+}
