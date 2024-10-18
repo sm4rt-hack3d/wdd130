@@ -31,6 +31,7 @@ nav a {
 .hero {
     position: relative;
     text-align: center;
+    color: white;
 }
 
 .hero img {
@@ -46,9 +47,9 @@ nav a {
     transform: translate(-50%, -50%);
     color: var(--accent2-color);
     font-family: 'Rock Salt', cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 20px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -57,10 +58,14 @@ nav a {
 
 article {
     margin: 20px;
-    background-color: rgba(255, 255, 255, 0.9); 
-    padding: 20px; 
-    border-radius: 8px; 
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 article img {
@@ -72,9 +77,14 @@ article img {
 section.adventure {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* White background for the adventure section */
-    border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center align text for the heading */
+    background-color: rgba(255, 255, 255, 0.9);
+    /*Whitebackgroundfortheadventuresection*/border-radius: 8px;
+    /*Roundedcorners*/text-align: center;
+     /* Center align text for the heading */:;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .adventure h2 {
