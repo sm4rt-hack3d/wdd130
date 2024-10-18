@@ -31,7 +31,6 @@ nav a {
 .hero {
     position: relative;
     text-align: center;
-    color: white;
 }
 
 .hero img {
@@ -46,9 +45,9 @@ nav a {
     transform: translate(-50%, -50%);
     color: var(--accent2-color);
     font-family: 'Rock Salt', cursive;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 10px;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -105,9 +104,14 @@ section.adventure {
 }
 
 .adventure img {
-    width: 100%; /* Set a uniform width for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: rounded corners for images */
+    width: 100%;
+    /*Setauniformwidthforimages*/height: auto;
+    /*Maintainaspectratio*/border-radius: 5px;
+    /*Optional: rounded corners for images */;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .adventure .caption {
