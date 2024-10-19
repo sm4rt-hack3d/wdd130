@@ -21,7 +21,10 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
 }
-
+nav   {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
