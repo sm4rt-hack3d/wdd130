@@ -58,7 +58,7 @@ nav a {
     -o-transform: translate(-50%, -50%);
 }
 
-article {
+.hero article {
     margin: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -70,7 +70,7 @@ article {
     -o-border-radius: 8px;
 }
 
-article img {
+.hero article img {
     float: right;
     width: 150px;
     margin: 0 0 10px 10px;
