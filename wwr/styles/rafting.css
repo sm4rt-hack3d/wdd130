@@ -52,10 +52,10 @@ nav a {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 article {
