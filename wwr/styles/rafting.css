@@ -144,7 +144,7 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 20;
+    padding: 20px;
     align-items: center;
 }
 
