@@ -87,6 +87,12 @@ header {
     margin: 0 0 10px 10px;
 }
 /*Section History*/
+.history {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
 .history-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
