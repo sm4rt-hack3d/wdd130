@@ -100,8 +100,8 @@ header {
     height: auto;
     border: 5px solid var(--accent1-color);
 }
-/*Section History*/
-.grid{
+/*Section Adventure*/
+.grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
