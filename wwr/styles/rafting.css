@@ -89,7 +89,7 @@ header {
 /*Section History*/
 .history {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 40px;
     text-align: center;
 }
