@@ -13,6 +13,7 @@ body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
+/*Section Header*/
 
 header {
     display: flex;
@@ -21,15 +22,23 @@ header {
     padding: 20px;
     background-color: var(--primary-color);
 }
-nav   {
-    padding-bottom: 20px;
-    padding-top: 20px;
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}   
+.nav-menu li {
+    display: inline;
 }
-nav a {
-    color: var(--secondary-color);
+.nav-menu a {
     text-decoration: none;
-    margin-right: 15px;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
+.nav-menu a :hover {
+    color: var(--accent2-color);
+}
+
 
 .hero {
     position: relative;
@@ -52,10 +61,10 @@ nav a {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .hero article {
@@ -77,56 +86,30 @@ nav a {
     width: 150px;
     margin: 0 0 10px 10px;
 }
-
-section.adventure {
-    margin: 20px;
+/*Section History*/
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    /*Whitebackgroundfortheadventuresection*/border-radius: 8px;
-    /*Roundedcorners*/text-align: center;
-     /* Center align text for the heading */
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
 }
-
-.adventure h2 {
-    color: var(--accent1-color); /* Title color */
-    margin-bottom: 20px; /* Space between title and images */
-}
-
-.adventure .image-container {
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: space-between; /* Center images horizontally */
-    flex-wrap: nowrap; /* Allow wrapping if necessary */
-    gap: 20px; /* Space between images */
-}
-
-.adventure .image-container div {
-    text-align: center; /* Center align captions below images */
-    flex: 0 0 auto; /* Allow images to grow and shrink equally */
+.history-content img {
+    grid-column: 2;
     width: 150px;
+    height: auto;
+    border: 5px solid var(--accent1-color);
 }
-
-.adventure img {
+/*Section History*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.grid-item image {
     width: 100%;
-    /*Setauniformwidthforimages*/height: auto;
-    /*Maintainaspectratio*/border-radius: 5px;
-    /*Optional: rounded corners for images */;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.adventure .caption {
-    margin-top: 5px; /* Space between image and caption */
-    color: var(--secondary-color); /* Caption color */
-}
-
-section h2 {
-    color: var(--accent1-color);
+    height: auto;
+    border: 5px solid var(--accent1-color);
 }
 
 footer {
