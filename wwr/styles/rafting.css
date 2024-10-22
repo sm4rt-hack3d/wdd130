@@ -144,21 +144,31 @@ body {
 .footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
+    padding: 20;
     align-items: center;
 }
 
 .footer p {
-    font-size: 1.2em;
-}
-.footer p a:hover{
-    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--primary-color);
 }
 
-.footer .social img {
-    padding-top: 15px;
-    align-self: flex-end;
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sociallinks a {
+    text-decoration: none;
+}
+
+.sociallinks img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.footer nav a:hover img {
+    filter: brightness();
+    -webkit-filter: brightness();
 }
