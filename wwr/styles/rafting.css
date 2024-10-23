@@ -52,7 +52,7 @@ body {
     color: var(--secondary-color);
     font-weight: bold;
 }
-.nav-menu a :hover {
+.nav-menu a:hover {
     color: var(--accent2-color);
 }
 
@@ -135,7 +135,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.grid-item image {
+.grid-item img {
     width: 100%;
     height: 200px;
     border: 5px solid var(--accent1-color);
@@ -145,6 +145,10 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
 }
 
