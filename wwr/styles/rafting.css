@@ -111,28 +111,23 @@ body {
     text-align: center;
 }
 
-.history-content {
-    display: flex;
-    flex-direction: row;
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(150px 1fr));
     gap: 20px;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    text-align: center;
 }
 
-.history-content p {
+.history-container p {
     flex-grow: 1;
     margin: 0;
     text-align: justify;
 }
 
-.history-content img {
+.history-container img {
     /*grid-column: 2;*/
-    width: 250px;
+    max-width: 100%;
     height: auto;
-    margin-left: 20px;
-    border: 5px solid var(--accent1-color);
 }
 /*Section Adventure*/
 .grid {
