@@ -78,10 +78,10 @@ body {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 
 .hero article {
@@ -175,4 +175,221 @@ body {
 .footer nav a:hover img {
     filter: brightness();
     -webkit-filter: brightness();
+}
+/*contact us css*/
+
+/* General Styles */
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    max-width: 100px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin-right: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: url('../images/hero.webp') no-repeat center center/cover;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Rock Salt', cursive;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+/* Contact Info and Map */
+.contact-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-details iframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border: none; /* Removed inline border style */
+}
+
+/* Employee Profiles */
+.employee-profiles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.employee-profiles .profile {
+    width: 30%;
+    text-align: center;
+}
+
+.employee-profiles .profile img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.employee-profiles .profile p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact-form .newsletter {
+    margin-bottom: 20px;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Link to wireframe image */
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .employee-profiles .profile {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
 }

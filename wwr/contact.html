@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>White Water Rafting - Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo container">
+            <img src="images/logo.png" alt="White Water Rafting Logo" width="80">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+
+            <div class="contact-details">
+                <h2>Our Office</h2>
+                <p>77 on Independence Avenue, Windhoek Namibia</p>
+                <p>Phone: (+264) 81 474 6407</p>
+                <p>Email: info@whitewaterraftingco.com</p>
+
+                <!-- Embedded Google Map -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233669.3172269512!2d16.977907733751583!3d-22.558904669759816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c0adcc6c85bbf47%3A0xa007ed5b6d78b788!2sIndependence%20Ave%2C%20Windhoek%2C%20Namibia!5e0!3m2!1sen!2s!4v1698233047306!5m2!1sen!2s"
+                    width="600" 
+                    height="450" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Employee Profiles -->
+            <div class="employee-profiles">
+                <h2>Meet Our Team</h2>
+                <div class="profile">
+                    <img src="images/Melissa.webp" alt="Employee 1">
+                    <p>Melissa Uises, Head Rafting Guide</p>
+                </div>
+                <div class="profile">
+                    <img src="images/Rebeccah.webp" alt="Employee 2">
+                    <p>Rebecca Shiwoohmba, Booking Manager</p>
+                </div>
+                <div class="profile">
+                    <img src="images/Hyrum.webp" alt="Employee 3">
+                    <p>Hyrum Noble, Safety Officer</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="purpose">Purpose of the Message:</label><br>
+                    <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                    <label for="suggestion">Website Suggestion</label><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div class="newsletter">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <button type="submit">Submit Your Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 White Water Rafting Co. | Designed by Reinhold T. Kambata</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a> 
+        </nav>
+        <p><a href="wireframe_image_link">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
