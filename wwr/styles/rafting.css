@@ -1,5 +1,215 @@
 
 :root {
+    --primary-color: #778DA9;   /* Primary Color */
+    --secondary-color: #0D1B2A; /* Secondary Color */
+    --accent1-color: #6C0E23;   /* Accent Color 1 */
+    --accent2-color: #9CC5A1;   /* Accent Color 2 */
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.header .logo img {
+    width: 80px;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.newsletter-signup {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.newsletter-signup h2 {
+    color: var(--accent1-color);
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.newsletter-signup button {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--accent1-color);
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+
+.call-to-action .cta-button {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    padding-left: 20px;
+    height: auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.grid-item h3 {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.grid-item p {
+    color: var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .sociallinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer .sociallinks a {
+    margin: 0 10px;
+}
+
+.footer .sociallinks img {
+    width: 30px;
+    height: auto;
+}
+
+
+/*About.html CSS*/
+:root {
     --primary-color: #778DA9;   
     --secondary-color: #0D1B2A; 
     --accent1-color: #6C0E23;   
@@ -78,10 +288,10 @@ body {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .hero article {
@@ -176,6 +386,218 @@ body {
     filter: brightness();
     -webkit-filter: brightness();
 }
+
+
+/* trip.html*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+    line-height: 1.6;
+    /*background-color: #;*/
+}
+
+/* Header Styling */
+.header {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo img {
+    width: 80px;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section Styling */
+.hero-trip {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-trip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+}
+
+.hero-trip h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: var(--accent1-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Trip Cards */
+.trip-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.trip-card {
+    background: var(--secondary-color);
+    padding: 15px;
+    flex: 1 1 30%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.trip-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.trip-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Booking CTA */
+.booking-cta {
+    text-align: center;
+    padding: 20px;
+    background: var(--accent2-color);
+    border-radius: 5px;
+    margin: 20px 0;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.booking-cta p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.booking-cta .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.booking-cta .cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Footer Styling */
+footer {
+    background: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .sociallinks a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trip-cards {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
 /*contact us css*/
 
 /* General Styles */
@@ -187,8 +609,8 @@ body {
 }
 
 .header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -338,8 +760,8 @@ h2 {
 .contact-form button {
     padding: 10px 15px;
     font-size: 1.1rem;
-    background-color: #2980b9;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -351,8 +773,8 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 20px;
     text-align: center;
     position: relative;
